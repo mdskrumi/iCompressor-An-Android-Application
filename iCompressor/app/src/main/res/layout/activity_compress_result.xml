@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/finalLayout"
+    android:background="@drawable/bg_animation"
+    tools:context="net.icebd.mdskrumi.CompressResultActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+
+    <ImageView
+        android:id="@+id/resultpageTopImage"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/balloon"
+        />
+    <TextView
+        android:id="@+id/resultpageTopText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Successfully Compressed"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resultpageTopImage"
+        android:textSize="25sp"
+        android:textColor="#197500"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultLayout"
+        android:padding="10dp"
+        android:layout_below="@id/resultpageTopText"
+        android:gravity="center"
+        android:background="@color/SHOWABLE"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Before : "
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/netSizeBeforeCompressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"
+                    android:textSize="16sp"
+
+                    />
+                <ImageView
+                    android:id="@+id/preImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sad"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="After : "
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"
+                    android:textSize="16sp"
+
+                    />
+                <TextView
+                    android:id="@+id/netSizeAfterCompressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/postImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/happy"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/resultInPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="00%"
+            android:textSize="50dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/BLACK"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/resultLayout"
+        >
+
+        <Button
+            android:id="@+id/finalPageButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/BUTTONCOLOR"
+            android:text="Back to\nMenu"
+            android:textColor="@color/WHITE"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/gotoResultPage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/BUTTONCOLOR"
+            android:text="See Compressed\nFiles"
+            android:textColor="@color/WHITE"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

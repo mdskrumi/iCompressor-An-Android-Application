@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/preFinalLayout"
+    android:background="@drawable/bg_animation"
+    tools:context="net.icebd.mdskrumi.CompressionPreFinalActivity">
+
+    <LinearLayout
+        android:id="@+id/selectDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/SHOWABLE"
+        >
+
+        <TextView
+            android:text="Storage Path"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/selectedStoragePath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="default path"
+            android:textColor="@color/BLACK"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selectQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/selectDirectory"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/SHOWABLE"
+        >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Select Quality"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:id="@+id/qualityIndicatorText"
+            android:text="Worst"
+            android:textColor="@color/RED"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            />
+
+
+    </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <SeekBar
+               android:id="@+id/seekBar"
+               android:layout_width="0dp"
+               android:layout_weight="5"
+               android:layout_height="wrap_content"
+               android:max="100"
+               android:min="1"
+               />
+           <TextView
+               android:id="@+id/qualityTextView"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:gravity="right"
+               android:textColor="@color/BLACK"
+               android:layout_height="wrap_content"
+               />
+
+       </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/deletePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@id/selectQuality"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/SHOWABLE"
+        >
+
+        <TextView
+            android:text="Delete Original Files"
+            android:textColor="@color/BLACK"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            />
+        <Switch
+            android:id="@+id/deleteOriginalFilesSwitch"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/compressButtonInPrefinal"
+        android:layout_below="@id/deletePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Start Compression"
+        android:textColor="@color/WHITE"
+        android:textSize="18sp"
+        android:background="@color/BUTTONCOLOR"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

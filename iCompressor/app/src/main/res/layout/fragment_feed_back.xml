@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    tools:context="net.icebd.mdskrumi.Fragment.FeedBackFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feedbackToolBar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/navbackInFeedBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/navback"
+            />
+        <TextView
+            android:text="FeedBack"
+            android:textColor="@color/WHITE"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_below="@id/feedbackToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+            <TextView
+                android:text="Problems / Suggestions"
+                android:textSize="18sp"
+                android:textColor="@color/BLACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/feedBackET"
+                android:hint="Difficulties you have faced or any suggestion to make the application more useful "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:text="Your Email"
+                android:textSize="18sp"
+                android:textColor="@color/BLACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/emailFeddBackET"
+                android:hint="Email or any social account link (Optional)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:id="@+id/feedBackSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Submit"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/WHITE"
+                android:textSize="18sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

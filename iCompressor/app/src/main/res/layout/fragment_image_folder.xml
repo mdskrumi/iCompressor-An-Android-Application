@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ImageFolderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SearchView
+            android:id="@+id/searchViewImageFolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search by Date"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+        </SearchView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/imageRecyclerViewInImageFolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchViewImageFolder"
+            />
+        <LinearLayout
+            android:id="@+id/imageDataIndicatorImageFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:alpha=".8"
+
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/noimage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Image is Found"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/deleteSelectingImageButton"
+            android:background="@color/BUTTONCOLOR"
+            android:text="Delete"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

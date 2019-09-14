@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+
+
+    <TextView
+        android:text="Compressing may take some time"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/BLACK"
+        android:textSize="22sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Take a nap"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/BLACK"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/currentImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ProgressBar
+        android:id="@+id/compressingProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:min="1"
+        />
+    <TextView
+        android:id="@+id/progressbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/BLACK"
+        />
+
+    <Button
+        android:id="@+id/cancelCompressing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        />
+
+</LinearLayout>
